@@ -1,50 +1,97 @@
 <!doctype html>
-<html>
+<html lang="en" class="no-js">
 
 <head>
-  <title>Jostasik - Personal Website</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://jostasik.com/" />
+    <title>by joe stasik</title>
+    <meta name="description" content="home of the silly stuff i've managed to build">
+    <meta name="keywords" content="flowgorithm-macos, flowgorithm for mac, dominos stats, domino's franchisee list, od-dorker, open-dir dorks, jostasik, joe stasik, jstasik97, joseph stasik, gogorama, gogorama.me" />
+    <meta property="fb:admins" content="jstasik97" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <header>
-    <h1>Welcome</h1>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  <main>
-    <section id="about">
-      <h2>About</h2>
-      <p>24 year old computer science student based in New Jersey.</p>
-    </section>
-    <section id="projects">
-      <h2>Projects</h2>
-      <h3>Domino's Stats</h3>
-      <p>An interactive map featuring every Domino's Pizza location in the United States. Custom markers and clustering show an overview of stores at a distance and individual locations up close. Click on a store marker to see its details, including the store number, franchisee's name, open/closed status, phone number, city, and estimated delivery time. Data is updated every 15 minutes.</p>
-      <p>View the live project at: <a href="https://jostasik.com/dominos">https://jostasik.com/dominos</a></p>
-      <h3>Flowgorithm for MacOS</h3>
-      <p>Flowgorithm is a popular programming tool for creating flowcharts, originally developed for Windows by Devin Cook. As a hobby project, I have created a port of Flowgorithm for MacOS, allowing Mac users to also access this valuable tool. With its user-friendly interface and extensive set of features, Flowgorithm for MacOS is a great resource for students and professionals looking to improve their programming skills and efficiency. If you're a Mac user, check out Flowgorithm for MacOS to get all the benefits of this powerful flowcharting tool.</p>
-      <p>View the project at: <a href="https://github.com/jostasik/Flowgorithm-macOS">https://github.com/jostasik/Flowgorithm-macOS</a></p>
-    </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>You can contact me at:</p>
-      <ul>
-        <li>Email: joe@jostasik.com</li>
-        <li>Twitter: @jostasik</li>
-        <li>LinkedIn: linkedin.com/in/jstasik97</li>
-      </ul>
-    </section>
-  </main>
-  <footer>
-    <p>make stuff</p>
-  </footer>
+    <header>
+        <h1>projects by joe stasik</h1>
+    </header>
+    <nav>
+        <ul id="bigbar">
+            <div class="left">
+                <li><a href="" class="nav-link">home</a></li>
+            </div>
+            <div class="right">
+                <li><a href="#about" class="nav-link">about</a></li>
+                <li><a href="#projects" class="nav-link">projects</a></li>
+                <li><a href="#contact" class="nav-link">contact</a></li>
+            </div>
+        </ul>
+    </nav>
+    <main>
+        <section id="about" class="fade-in">
+            <h2>About</h2>
+            <p>24 year old computer science student based in New Jersey.</p>
+        </section>
+        <section id="projects" class="fade-in">
+            <h2>Projects</h2>
+            <h3 align="center"> Domino's Stats</h3>
+            <p>An interactive map featuring every Domino's Pizza location in the United States. Custom markers and clustering show an overview of stores at a distance and individual locations up close. Click on a store marker to see some relavent details, such as:</p>
+            <ul>
+                <li>Store ID</li>
+                <li>Address</li>
+                <li>Phone Mumber</li>
+                <li>Business Hours</li>
+                <li>Delivery & Carryout Times</li>
+            </ul>
+            <p>View the live project at: <a href="https://jostasik.com/dominos">https://jostasik.com/dominos</a></p>
+            <b><br></b>
+            <h3 align="center">Flowgorithm for MacOS</h3>
+            <p>Flowgorithm is a popular programming tool for creating flowcharts, originally developed for Windows by Devin Cook. As a hobby project, I have created a port of Flowgorithm for MacOS, allowing Mac users to also access this valuable tool. With its user-friendly interface and extensive set of features, Flowgorithm for MacOS is a great resource for students and professionals looking to improve their programming skills and efficiency. If you're a Mac user, check out Flowgorithm for MacOS to get all the benefits of this powerful flowcharting tool.</p>
+            <p>View the project at: <a href="https://github.com/jostasik/Flowgorithm-macOS">https://github.com/jostasik/Flowgorithm-macOS</a></p>
+        </section>
+        <section id="contact" class="fade-in">
+            <h2>Contact</h2>
+            <p>You can contact me at:</p>
+            <ul>
+                <li>Email: joe@jostasik.com</li>
+                <li>Twitter: @jostasik</li>
+                <li>LinkedIn: linkedin.com/in/jstasik97</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>make stuff</p>
+    </footer>
+    <script>
+    // Get all the nav links
+    // Get all the nav links
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    // Add a click event listener to each nav link
+    navLinks.forEach(link => {
+        link.addEventListener('click', e => {
+            // Prevent the default link behavior
+            // e.preventDefault();
+
+            // Get the target section ID
+            const sectionId = link.getAttribute('href');
+
+            // Get the target section element
+            const section = document.querySelector(sectionId);
+
+            // Remove the 'fade-in' class from all sections
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.remove('fade-in');
+            });
+
+            // Add the 'fade-in' class to the target section
+            section.classList.add('fade-in');
+        });
+    });
+    </script>
 </body>
 
 </html>
