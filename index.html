@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.png" type="image/png">
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <title>@jostasik</title>
     <meta name="title" content="@jostasik" />
     <meta name="description" content="stuff by me" />
@@ -42,23 +42,28 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container">
-          <a href="#" class="navbar-brand">joe stasik</a>
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+          <a class="navbar-brand" href="#">joe stasik</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
-          <div class="collapse navbar-collapse" id="navmenu">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a href="https://jostasik.com/filesurfer/" class="nav-link">filesurfer</a>
+                <a class="nav-link active" aria-current="page" href="https://jostasik.com">home</a>
               </li>
               <li class="nav-item">
-                <a href="https://jostasik.com/dominos/" class="nav-link">domino's stats</a>
+                <a class="nav-link" href="https://jostasik.com/about">about</a>
               </li>
-
               <li class="nav-item">
-                <a href="https://github.com/jostasik/" class="nav-link">my github</a>
+                <a class="nav-link" href="https://github.com/jostasik">github</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">projects</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="https://jostasik.com/dominos">dominos map</a></li>
+                  <li><a class="dropdown-item" href="https://jostasik.com/filesurfer">file-surfer</a></li>
+                  <li><a class="dropdown-item" href="https://github.com/jostasik/Flowgorithm-macOS">flowgorithm</a></li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -67,5 +72,27 @@
     </header>
     <div id="particles-js" class="container-fluid"></div>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <section class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__heading">
+            <h2>W3schoolWeb</h2>
+          </div>
+          <p class="mb-0">Content & Graphics © 2020 info@gmail.com LLC</p>
+
+          <ul class="social__media">
+            <li>
+              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
