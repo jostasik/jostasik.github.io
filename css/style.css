@@ -28,6 +28,7 @@ canvas {
 
 #permission_denied h3 {
   position: relative;
+  color: rgb(199, 197, 145);
   width: auto;
   display: inline-block;
 }
