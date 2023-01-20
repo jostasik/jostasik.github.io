@@ -2,6 +2,7 @@
 body {
   margin: 0;
   text-align: center;
+  color: #314567;
 }
 canvas {
   display: block;
@@ -29,9 +30,4 @@ canvas {
   position: relative;
   width: auto;
   display: inline-block;
-}
-
-#enron {
-  width: 30%;
-  c
 }
