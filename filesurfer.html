@@ -78,68 +78,60 @@
     </header>
     <div id="particles-js" class="container-fluid mt-0"></div>
     <div id="filesurfer" class="container mt-5 align-items-center">
-          <h1>file-surfer</h1>
-          <p>open directory googler</p>
-          <form name="menufrm">
-            <div class="form-group container-fluid align-items-center" >
-              <h4 for="fileType">File Types:</h4>
-              <div class="form-control d-flex justify-content-around">
-
-                <div>
-                  <input type="checkbox" id="fileTypeAll" name="filetype" value="">
-                  <label for="fileTypeAll">All</label>
-                  </div>
-                
-                <div>
-                  <input type="checkbox" id="fileTypeArchives" name="filetype" value="%2B(.rar|.tar|.zip|.sit)">
-                  <label for="fileTypeArchives">Archives</label>
-                  </div>
-                
-                <div>
-                  <input type="checkbox" id="fileTypeAudio" name="filetype" value="%2B(.ogg|.mp3|.flac|.wma|.m4a|.flac|.alac|.ape|.aac))">
-                  <label for="fileTypeAudio">Audio</label>
-                  </div>
-                
-                <div>
-                  <input type="checkbox" id="fileTypeEbooks" name="filetype" value="%2B(.MOBI|.EPUB|.PDF|.MOBI|.EPUB)">
-                  <label for="fileTypeEbooks">e-Books</label>
-                  </div>
-                  
-                <div>
-                  <input type="checkbox" id="fileTypeDocs" name="filetype" value="%2B(.doc|.docx|.md|.odt|.pages|.pdf|.rtf|.sxw|.tiff|.txt)">
-                  <label for="fileTypeDocs">Docs</label>
-                  </div>
-                
-                <div> 
-                  <input type="checkbox" id="fileTypeImages" name="filetype" value="%2B(.jpg|.gif|.png|.tif|.tiff|.psd)">
-                  <label for="fileTypeImages">Images</label>
-                  </div> 
-              
-              <div>
-                <input type="checkbox" id="fileTypeTorrents" name="filetype" value=".torrent">
-                <label for="fileTypeTorrents">Torrents</label>
-                </div>
-
-              <div>
-                <input type="checkbox" id="fileTypeVideos" name="filetype" value="%2B(.mkv|.mp4|.avi|.mov|.mpg|.wmv)">
-                <label for="fileTypeVideos">Videos</label>
-              </div>
-              
+      <h1>file-surfer</h1>
+      <p>open directory googler</p>
+      <form name="menufrm">
+        <div class="form-group container-fluid align-items-center">
+          <h4 for="fileType">File Types:</h4>
+          <div class="form-control d-flex justify-content-around">
+            <div>
+              <input type="checkbox" id="fileTypeAll" name="filetype" value="" />
+              <label for="fileTypeAll">All</label>
             </div>
-            <div class="form-group mt-3">
-              <label for="searchString">Search:</label>
-              <input class="form-control" id="searchString" name="string" size="30" type="text" />
+
+            <div>
+              <input type="checkbox" id="fileTypeArchives" name="filetype" value="%2B(.rar|.tar|.zip|.sit)" />
+              <label for="fileTypeArchives">Archives</label>
             </div>
-            <button class="btn btn-primary bg-dark mt-5" onclick="createsearch();return false;" type="submit">Search</button>
-          </form>
+
+            <div>
+              <input type="checkbox" id="fileTypeAudio" name="filetype" value="%2B(.ogg|.mp3|.flac|.wma|.m4a|.flac|.alac|.ape|.aac))" />
+              <label for="fileTypeAudio">Audio</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="fileTypeEbooks" name="filetype" value="%2B(.MOBI|.EPUB|.PDF|.MOBI|.EPUB)" />
+              <label for="fileTypeEbooks">e-Books</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="fileTypeDocs" name="filetype" value="%2B(.doc|.docx|.md|.odt|.pages|.pdf|.rtf|.sxw|.tiff|.txt)" />
+              <label for="fileTypeDocs">Docs</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="fileTypeImages" name="filetype" value="%2B(.jpg|.gif|.png|.tif|.tiff|.psd)" />
+              <label for="fileTypeImages">Images</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="fileTypeTorrents" name="filetype" value=".torrent" />
+              <label for="fileTypeTorrents">Torrents</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="fileTypeVideos" name="filetype" value="%2B(.mkv|.mp4|.avi|.mov|.mpg|.wmv)" />
+              <label for="fileTypeVideos">Videos</label>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <label for="searchString">Search:</label>
+            <input class="form-control" id="searchString" name="string" size="30" type="text" />
+          </div>
+          <button class="btn btn-primary bg-dark mt-5" onclick="createsearch();return false;" type="submit">Search</button>
         </div>
-      </div>
+      </form>
     </div>
-</body>
-     
-
-    </div>
-
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
