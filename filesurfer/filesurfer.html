@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/assets/favicon.png" type="image/png" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <title>home</title>
+    <meta name="title" content="@jostasik" />
+    <meta name="description" content="relatively jank" />
+    <meta name="keywords" content="jostasik, joe stasik, jstasik97, joseph stasik, gogorama, gogorama.me" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <meta name="author" content="Joe Stasik" />
+    <meta name="contact" content="jostasik@outlook.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/particles.min.js"></script>
+    <script src="/js/search.js"></script>
+    <script src="/js/app.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8BWQDGE068"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag("js", new Date())
+
+      gtag("config", "G-8BWQDGE068")
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">joe stasik</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://jostasik.com">home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">about</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/jostasik">github</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                  >projects</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="/dominos">dominos map</a></li>
+                  <li><a class="dropdown-item" href="/filesurfer">file surfer</a></li>
+                  <li><a class="dropdown-item" href="/flowgorithm">flowgorithm</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="particles-js" class="container-fluid mt-0"></div>
+    <div id="filesurfer" class="container mt-5 align-items-center">
+      <h1>file-surfer</h1>
+      <p>open directory googler</p>
+      <form name="menufrm">
+        <div class="form-group container-fluid align-items-center">
+          <h4 for="fileType">File Types:</h4>
+          <div class="form-control d-flex justify-content-around">
+            <div>
+              <input type="checkbox" id="fileTypeAll" name="filetype" value="" />
+              <label for="fileTypeAll">All</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="fileTypeArchives" name="filetype" value="%2B(.rar|.tar|.zip|.sit)" />
+              <label for="fileTypeArchives">Archives</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="fileTypeAudio" name="filetype" value="%2B(.ogg|.mp3|.flac|.wma|.m4a|.flac|.alac|.ape|.aac))" />
+              <label for="fileTypeAudio">Audio</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="fileTypeEbooks" name="filetype" value="%2B(.MOBI|.EPUB|.PDF|.MOBI|.EPUB)" />
+              <label for="fileTypeEbooks">e-Books</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="fileTypeDocs" name="filetype" value="%2B(.doc|.docx|.md|.odt|.pages|.pdf|.rtf|.sxw|.tiff|.txt)" />
+              <label for="fileTypeDocs">Docs</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="fileTypeImages" name="filetype" value="%2B(.jpg|.gif|.png|.tif|.tiff|.psd)" />
+              <label for="fileTypeImages">Images</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="fileTypeTorrents" name="filetype" value=".torrent" />
+              <label for="fileTypeTorrents">Torrents</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="fileTypeVideos" name="filetype" value="%2B(.mkv|.mp4|.avi|.mov|.mpg|.wmv)" />
+              <label for="fileTypeVideos">Videos</label>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <label for="searchString">Search:</label>
+            <input class="form-control" id="searchString" name="string" size="30" type="text" />
+          </div>
+          <button class="btn btn-primary bg-dark mt-5" onclick="createsearch();return false;" type="submit">Search</button>
+        </div>
+      </form>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
