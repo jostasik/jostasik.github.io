@@ -11,16 +11,16 @@
       "value": "#ffffff"
     },
     "shape": {
-      "type": "circle",
+      "type": "star",
       "stroke": {
         "width": 0,
         "color": "#000000"
       },
       "polygon": {
-        "nb_sides": 0
+        "nb_sides": 5
       },
       "image": {
-        "src": "/assets/enron.png",
+        "src": "/images/enron.png",
         "width": 50,
         "height": 50
       }
