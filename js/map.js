@@ -1,7 +1,7 @@
 const map = L.map("map", { center: [37, -96], zoom: 4, minZoom: 4, maxZoom: 16 })
 map.attributionControl.setPrefix('developed by <a href="https://jostasik.com" target="_blank">Joe Stasik</a>')
 
-const markerIcon = L.icon({ iconUrl: "images/marker.svg", iconSize: [32, 32], iconAnchor: [16, 16] })
+const markerIcon = L.icon({ iconUrl: "/images/marker.svg", iconSize: [32, 32], iconAnchor: [16, 16] })
 
 const dark = L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
   attribution: '&copy; <a href="https://carto.com/attribution">Carto</a>',
