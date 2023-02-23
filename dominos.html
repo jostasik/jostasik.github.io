@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/dominos/images/favicon.svg" />
+    <title>Domino's Stats</title>
+    <meta name="title" content="Domino's Stats" />
+    <meta name="description" content="Domino's Store Tracker. Quickly view the live statistics for your local Domino's!" />
+
+    <meta name="keywords" content="domino's store map, domino's store tracker, domino's stat map, domino's wait time estimator, domino's franchise tracker" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Domino's Stats" />
+    <meta property="og:url" content="https://jostasik.com/dominos" />
+    <meta property="og:image" content="/dominos/images/page-view.png" />
+    <link rel="stylesheet" href="/dominos/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/leaflet.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.79.0/L.Control.Locate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8BWQDGE068"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag("js", new Date())
+
+      gtag("config", "G-8BWQDGE068")
+    </script>
+  </head>
+
+  <body>
+    <div id="loading">
+      <img class="spinner" id="loading-image" src="/dominos/images/favicon.svg" alt="Loading..." />
+    </div>
+    <div id="map" class="map-custom"></div>
+    <script>
+      $(document)
+        .ajaxStart(function () {
+          $("#loading").removeClass("hide")
+        })
+        .ajaxStop(function () {
+          $("#loading").addClass("hide")
+        })
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/leaflet.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.79.0/L.Control.Locate.min.js"></script>
+    <script src="/dominos/js/map.js"></script>
+    <script defer src="/dominos/js/markers.js"></script>
+  </body>
+</html>

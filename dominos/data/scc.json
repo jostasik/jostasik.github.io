@@ -1,0 +1,23 @@
+[
+  {"a": 1, "b": 61.15, "c": -149.878, "d1": "7710 King St", "d2": "Anchorage", "d3": " Alaska", "d4": 99518},
+  {"a": 2, "b": 33.431, "c": -112.171, "d1": "5216 W Mohave St", "d2": " Phoenix", "d3": " Arizona", "d4": 85043},
+  {"a": 3, "b": 34.061, "c": -117.553, "d1": "301 S Rockefeller Ave", "d2": " Ontario", "d3": " California", "d4": 91761},
+  {"a": 4, "b": 37.615, "c": -122.047, "d1": "30852 San Antonio St", "d2": " Hayward", "d3": " California", "d4": 94544},
+  {"a": 5, "b": 39.789, "c": -104.869, "d1": "10252 E 51st Ave", "d2": " Denver", "d3": " Colorado", "d4": 80239},
+  {"a": 6, "b": 41.928, "c": -72.711, "d1": "14 International Dr", "d2": " East Granby", "d3": " Connecticut", "d4": 6026},
+  {"a": 7, "b": 28.636, "c": -81.828, "d1": "7600 American Way", "d2": " Groveland", "d3": " Floraa", "d4": 34736},
+  {"a": 8, "b": 34.053, "c": -84.606, "d1": "4055 Royal Dr NW", "d2": " Kennesaw", "d3": " Georgia", "d4": 30144},
+  {"a": 9, "b": 21.372, "c": -157.903, "d1": "99-1445 Koaha Pl", "d2": " Aiea", "d3": " Hawaii", "d4": 96701},
+  {"a": 10, "b": 39.055, "c": -84.623, "d1": "1638 Dolwick Dr", "d2": " Erlanger", "d3": " Kentucky", "d4": 41018},
+  {"a": 11, "b": 30.35, "c": -91.018, "d1": "18251 E Petroleum Dr", "d2": " Baton Rouge", "d3": " Louisiana", "d4": 70809},
+  {"a": 12, "b": 39.096, "c": -76.692, "d1": "8271 Anderson Ct", "d2": " Odenton", "d3": " Maryland", "d4": 21113},
+  {"a": 13, "b": 42.178, "c": -83.391, "d1": "17605 Commerce Dr", "d2": " New Boston", "d3": " Michigan", "d4": 48164},
+  {"a": 14, "b": 42.315, "c": -83.682, "d1": "24 Frank Lloyd Wright Dr", "d2": " Ann Arbor", "d3": " Michigan", "d4": 48105},
+  {"a": 15, "b": 44.836, "c": -93.131, "d1": "3355 Mike Collins Dr", "d2": " Saint Paul", "d3": " Minnesota", "d4": 55121},
+  {"a": 16, "b": 35.679, "c": -78.558, "d1": "3100 Waterfield Dr", "d2": " Garner", "d3": " North Carolina", "d4": 27529},
+  {"a": 17, "b": 40.525, "c": -74.324, "d1": "1075 King Georges Post Rd", "d2": " Edison", "d3": " New Jersey", "d4": 8837},
+  {"a": 18, "b": 33.914, "c": -81.082, "d1": "210 Foster Brothers Dr", "d2": " West Columbia", "d3": " South Carolina", "d4": 29172},
+  {"a": 19, "b": 29.853, "c": -95.831, "d1": "900 Igloo Rd", "d2": " Katy", "d3": " Texas", "d4": 77493},
+  {"a": 20, "b": 32.729, "c": -97.019, "d1": "900 d3 Hwy 161", "d2": " Grand Prairie", "d3": " Texas", "d4": 75051},
+  {"a": 21, "b": 47.362, "c": -122.233, "d1": "8005 S 266th St", "d2": " Kent", "d3": " Washington", "d4": 98032}
+]
