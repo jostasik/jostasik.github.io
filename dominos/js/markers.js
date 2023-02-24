@@ -2,11 +2,22 @@ $.get("./../dominos/data/info.csv", function (storeData) {
   var data = Papa.parse(storeData, {header: true, dynamicTyping: true}).data
   for (var i in data) {
     const row = data[i]
-    const popupContent = `<div style='text-align:center;font-size:16px'>Domino's <b>${row.StoreID}</b></div>Franchisee: <b>${row.Franchisee}</b>`
-    const marker = L.marker([row.Latitude, row.Longitude], {opacity: 1, icon: storeIcon}).bindPopup(popupContent)
+    const popupContent = `<div style='text-align:center;font-size:16px'>Domino's <b>${row.ID}</b>
+    </div>Franchisee: <b>${row.Franchisee}</b>`
+    const marker = L.circleMarker([row.Latitude, row.Longitude], {
+      renderer: myRenderer,
+      opacity: 1,
+      fillOpacity: 1,
+      radius: 5,
+      weight: 1,
+      color: "#000",
+      fillColor: getColor(row.Franchisee),
+    })
+      .addTo(map)
+      .bindPopup(popupContent)
     marker.on("click", function (e) {
       var popup = e.target.getPopup()
-      $.getJSON(`https://api.jostasik.com/api/profile?storeId=${row.StoreID}`).done(function (api) {
+      $.getJSON(`https://api.jostasik.com/api/profile?storeId=${row.ID}`).done(function (api) {
         var liveDetails = `City: ${api.City}, ${api.Region}<br>Phone: ${api.Phone}<hr>
                           Open: <span style='text-transform:capitalize'><b>${api.IsOpen}</b><br>
                           Deliveries: <b>${api.ServiceMethodEstimatedWaitMinutes.Delivery.Min}-${api.ServiceMethodEstimatedWaitMinutes.Delivery.Max}</b> mins<br>
@@ -17,7 +28,6 @@ $.get("./../dominos/data/info.csv", function (storeData) {
         popup.update()
       })
     })
-    storeMarkers.addLayer(marker)
   }
 })
 
@@ -33,3 +43,20 @@ $.get("./../dominos/data/scc.csv", function (supplyData) {
       .addTo(map)
   }
 })
+
+function getColor(franchisee) {
+  // Generate a hash code for the Franchisee name
+  var hash = 0
+  for (var i = 0; i < franchisee.length; i++) {
+    hash = franchisee.charCodeAt(i) + ((hash << 5) - hash)
+  }
+
+  // Convert the hash code to a hex color code
+  var color = "#"
+  for (var i = 0; i < 3; i++) {
+    var value = (hash >> (i * 8)) & 0xff
+    color += value.toString(16).padStart(2, "0")
+  }
+
+  return color
+}
