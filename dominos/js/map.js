@@ -2,7 +2,7 @@ var map = L.map("map", {
   center: [39.9, -75.5],
   zoom: 6,
   minZoom: 4,
-  maxZoom: 16,
+  maxZoom: 12,
   preferCanvas: true,
   worldCopyJump: true,
 })
@@ -23,6 +23,6 @@ var supplyIcon = L.icon({
   iconAnchor: [16, 16],
 })
 
-L.control.locate({position: "topleft", locateOptions: {flyTo: true, maxZoom: 12}}).addTo(map)
+//L.control.locate({position: "topleft", locateOptions: {flyTo: true, maxZoom: 12}}).addTo(map)
 
 map.attributionControl.setPrefix('developed by <a href="https://jostasik.com" target="_blank">Joe Stasik</a>')
