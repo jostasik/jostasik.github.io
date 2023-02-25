@@ -13,7 +13,7 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
 
 var myRenderer = L.canvas({
   padding: 1,
-  tolerance: 10,
+  tolerance: 5,
   interactive: true,
 })
 
