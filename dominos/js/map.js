@@ -7,8 +7,8 @@ var map = L.map("map", {
   worldCopyJump: true,
 })
 
-L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  attribution: '&copy; <a href="https://www.openstreetmap.com/copyright">OpenStreetMap</a>',
+L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+  attribution: '&copy;<a href="https://www.openstreetmap.com/copyright">OpenStreetMap</a>, &copy;<a href="https://carto.com/attributions">Carto</a>',
 }).addTo(map)
 
 var myRenderer = L.canvas({
@@ -17,12 +17,6 @@ var myRenderer = L.canvas({
   interactive: true,
 })
 
-var supplyIcon = L.icon({
-  iconUrl: "./../dominos/images/supplyChainCenter.svg",
-  iconSize: [34, 34],
-  iconAnchor: [16, 16],
-})
-
 //L.control.locate({position: "topleft", locateOptions: {flyTo: true, maxZoom: 12}}).addTo(map)
 
-map.attributionControl.setPrefix('developed by <a href="https://jostasik.com" target="_blank">Joe Stasik</a>')
+map.attributionControl.setPrefix('Developed by <a href="https://jostasik.com" target="_blank">Joe Stasik</a>')
