@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>https://jostasik.com</loc>
-        <lastmod>2023-02-23</lastmod>
+        <loc>https://jostasik.com/</loc>
+        <lastmod>2023-02-28</lastmod>
         <changefreq>always</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://jostasik.com/dominos</loc>
-        <lastmod>2023-02-23</lastmod>
+        <lastmod>2023-02-28</lastmod>
         <changefreq>always</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://jostasik.com/filesurfer</loc>
-        <lastmod>2023-02-23</lastmod>
+        <lastmod>2023-02-28</lastmod>
         <changefreq>always</changefreq>
         <priority>1.0</priority>
     </url>
